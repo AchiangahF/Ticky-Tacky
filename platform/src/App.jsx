@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 
 // my routes
-import Home from './components/Home.jsx';
-import Dashboard from './components/dashboard.jsx';
+import Home from './pages/Home.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>
   );

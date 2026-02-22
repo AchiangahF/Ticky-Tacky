@@ -1,0 +1,27 @@
+.custom-shape-divider-bottom-1771745908 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1771745908 svg {
+    position: relative;
+    display: block;
+    width: calc(104% + 1.3px);
+    height: 112px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1771745908 .shape-fill {
+    fill: #c0c0c0;
+}
+
+/* apply background */
+.set_background1 {
+    background: url("../assets/background1.jpg");
+    background-position: center;
+}
