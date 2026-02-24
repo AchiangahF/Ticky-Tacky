@@ -1,6 +1,8 @@
 
 import '../styles/hero.css'
 
+import TypingEffect from '../utils/TypingEffect';
+
 function Hero() {
 
     
@@ -12,7 +14,7 @@ function Hero() {
             <div className='row px-5 py-5'>
                 <div className='col-md-12'>
                     <p className="display-1 fw-bold pt-3">Ticky Tacky <br /> </p>
-                    <p className="display-4 fw-bold">Outsmart. Outplay. Outlast. </p>
+                    <TypingEffect />
 
                     <p className="lead text-secondary">It’s only nine squares… but one mistake can cost you everything..</p>
 
