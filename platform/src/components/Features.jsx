@@ -2,7 +2,7 @@
 function Features(){
 
     return(
-        <section className="container-fluid mt-2" style={{backgroundColor:"#eaeaeae2"}}>
+        <section className="container-fluid mt-2 " style={{backgroundColor:"#eaeaeae2"}}>
 
             {/* first group of features */}
 

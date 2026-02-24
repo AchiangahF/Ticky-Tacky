@@ -2,10 +2,12 @@
 import '../styles/hero.css'
 
 function Hero() {
+
+    
   return (
     <section className="hero-section position-relative bg-dark text-white">
       
-        <div className="container-fluid p-0 set_background1 min-vh-100">
+        <div className="container-fluid p-0 set_background1 my-section">
             
             <div className='row px-5 py-5'>
                 <div className='col-md-12'>
