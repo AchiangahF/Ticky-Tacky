@@ -22,7 +22,7 @@ function Hero() {
             </div>
 
         {/* Shape Divider */}
-        <div className="row pt-3">
+        <div className="row pt-5 pt-md-1">
             <div className='col-md-12'>
                 <div class="custom-shape-divider-bottom-1771745908">
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
