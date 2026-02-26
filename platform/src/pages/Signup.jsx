@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useNaviagte } from "react-router-dom"
 
 export default function Signup() {
   const [step, setStep] = useState(1);

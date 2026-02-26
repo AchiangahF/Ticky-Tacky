@@ -1,6 +1,9 @@
-
+import { useNavigate } from "react-router-dom"
 
 export default function Login() {
+
+  const navigate = useNavigate();
+
   return (
     <div className="container vh-100 d-flex justify-content-center align-items-center">
       <div className="row w-100">
@@ -36,7 +39,7 @@ export default function Login() {
                 />
               </div>
 
-              <button type="submit" className="btn btn-primary w-100">
+              <button type="submit" className="btn btn-primary w-100" onClick={() => navigate("/dashboard") }>
                 Login
               </button>
             </form>

@@ -3,7 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 // my routes
 import Home from './pages/Home.jsx';
 import Dashboard from './pages/Dashboard.jsx';
-import Auth from './pages/Auth.jsx';
+
+   // authentication routes
+   import Login from './pages/Login.jsx';
+   import Signup from './pages/Signup.jsx';
 
 function App() {
   return (
@@ -12,7 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/auth" element={<Auth />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       
     </div>

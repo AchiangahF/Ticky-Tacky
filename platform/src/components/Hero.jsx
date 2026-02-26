@@ -18,8 +18,8 @@ function Hero() {
 
                     <p className="lead text-secondary">It’s only nine squares… but one mistake can cost you everything..</p>
 
-                    <button type="button" className="btn btn-outline-success mt-3">Get Started !</button>
-                     <button type="button" className="btn btn-warning mt-3 mx-3 text-light" onClick={() => navigate("/Auth")}>Login...</button>
+                    <button type="button" className="btn btn-outline-success mt-3" onClick={() => navigate("/signup")}>Get Started !</button>
+                     <button type="button" className="btn btn-warning mt-3 mx-3 text-light" onClick={() => navigate("/login")}>Login...</button>
                 </div>
             </div>
 
