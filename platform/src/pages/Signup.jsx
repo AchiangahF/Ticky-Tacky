@@ -1,7 +1,13 @@
 import { useNavigate } from "react-router-dom"
 import { useState } from "react";
 
+import Bg_Auth from "../assets/Bg_Auth.jpg"
+
 export default function Signup() {
+
+  const navigate = useNavigate();
+
+
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     username: "",
@@ -43,26 +49,34 @@ export default function Signup() {
       <div className="col-12 col-sm-10 col-md-6 col-lg-4">
         <div className="card shadow-lg p-4">
 
-          <h3 className="text-center mb-4">Create Account</h3>
+          <div className="bg-dark pt-4 pb-2 rounded mb-3" style={{background:`linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),url(${Bg_Auth})`}}>>
+            <h3 className="text-center mb-4 text-light">Create Account</h3>
+          </div>
+
+          <hr />
 
           {step === 1 && (
             <form onSubmit={nextStep}>
               <div className="mb-3">
-                <label className="form-label">Username</label>
+                
                 <input
                   type="text"
-                  className="form-control"
+                  className="px-1 py-2 w-100 mb-2"
+                  style={{border:"none", borderBottom:"2px solid rgb(166, 74, 247)", outline:"none"}}
                   name="username"
+                  placeholder="username"
                   onChange={handleChange}
                   required
                 />
               </div>
 
               <div className="mb-3">
-                <label className="form-label">Password</label>
+                
                 <input
                   type="password"
-                  className="form-control"
+                  className="px-1 py-2 w-100"
+                  style={{border:"none", borderBottom:"2px solid rgb(166, 74, 247)", outline:"none"}}
+                  placeholder="password"
                   name="password"
                   onChange={handleChange}
                   required
@@ -70,10 +84,12 @@ export default function Signup() {
               </div>
 
               <div className="mb-4">
-                <label className="form-label">Confirm Password</label>
+                
                 <input
                   type="password"
-                  className="form-control"
+                  className="px-1 py-2 w-100 mb-3"
+                  style={{border:"none", borderBottom:"2px solid rgb(166, 74, 247)", outline:"none"}}
+                  placeholder="confirm password"
                   name="confirmPassword"
                   onChange={handleChange}
                   required
@@ -119,7 +135,9 @@ export default function Signup() {
           )}
 
         </div>
+        <p className="pt-3 px-2 text-secondary">don't have an account ? <span className="px-4 fw-bold text-primary float-end" style={{cursor:"pointer"}} onClick={() => navigate("/login")}>Login</span></p>
       </div>
+      
     </div>
   );
 }
