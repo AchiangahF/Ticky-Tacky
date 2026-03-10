@@ -49,7 +49,7 @@ export default function Signup() {
       <div className="col-12 col-sm-10 col-md-6 col-lg-4">
         <div className="card shadow-lg p-4">
 
-          <div className="bg-dark pt-4 pb-2 rounded mb-3" style={{background:`linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),url(${Bg_Auth})`}}>>
+          <div className="bg-dark pt-4 pb-2 rounded mb-3" style={{background:`linear-gradient(rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)),url(${Bg_Auth})`}}>
             <h3 className="text-center mb-4 text-light">Create Account</h3>
           </div>
 
